@@ -23,7 +23,7 @@
 
     function submitForm(e){
       e.preventDefault();
-      const item = document.querySelector('#item').value;
+      const item = document.querySelector('#item').value; // why do we need to use "#item" instead of just "item" ??!!
       console.log(ipcRenderer);
       ipcRenderer.send('item:add', item);
     }
